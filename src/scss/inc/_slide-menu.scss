@@ -1,0 +1,28 @@
+.page-menu {
+    &__wrapper {
+        position: relative;
+        padding: 50px 40px;
+    }
+
+    &__close-btn {
+        right: 40px;
+    }
+
+    .page-menu-nav {
+        ul {
+            flex-direction: column;
+            display: flex;
+        }
+
+        &__item {
+            margin-bottom: 24px;
+            line-height: 132%;
+            font-weight: 600;
+            font-size: 17px;
+
+            & a:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

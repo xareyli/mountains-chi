@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('html/_head.html', {
+        "title": "Main page"
+    })
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="@css/main-page.min.css">
+</head>
+<body class="_preload">
+
+    @@include('html/_header.html')
+
+    <div class="page-blackout _blackout"></div>
+
+    <main>
+        <section class="main-block fullscreen">
+            <div class="main-block__container">
+                <div class="main-block__content-wrapper">
+                    <div class="main-block__text-block text-block">
+                        <div class="text-block__wrapper">
+                            <h1 class="text-block__title">Become a mountain tourist today!</h1>
+        
+                            <p class="text-block__text">Our company “Vavilon” provides an opportunity to see incredibly beautiful places with your own eyes and admire wildlife.</p>
+        
+                            <button class="text-block__btn btn">Tickets</button>
+                        </div>
+                    </div>
+    
+                    <div class="main-block__slider-block slider-block">
+                        <button class="slider-block__nav-arrow slider-block__nav-arrow--left">
+                            <svg width="17" height="30" viewBox="0 0 17 30" fill="none"><path d="M16 2L2.86565 12.6717C1.38802 13.8722 1.38802 16.1278 2.86565 17.3283L16 28" stroke-width="3"/></svg>
+                        </button>
+
+                        <button class="slider-block__nav-arrow slider-block__nav-arrow--right">
+                            <svg width="17" height="30" viewBox="0 0 17 30" fill="none"><path d="M1 2L14.1343 12.6717C15.612 13.8722 15.612 16.1278 14.1343 17.3283L1 28" stroke-width="3"/></svg>
+                        </button>
+
+                        <div class="slider-block__slider slider-main-block swiper">
+                            <div class="slider-main-block__wrapper swiper-wrapper">
+                                <div class="slider-main-block__slide swiper-slide">
+                                    <img src="@img/slider-main-block/img-1.png" alt="img-1">
+                                </div>
+
+                                <div class="slider-main-block__slide swiper-slide">
+                                    <img src="@img/slider-main-block/img-2.png" alt="img-1">
+                                </div>
+
+                                <div class="slider-main-block__slide swiper-slide">
+                                    <img src="@img/slider-main-block/img-1.png" alt="img-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="journeus section">
+            <div class="journeus__container _container">
+                <h2 class="journeus__title block-title">Journeus</h2>
+                <div class="journeus__content-wrapper">
+                    <div class="journeus__cards">
+                        <div class="journeus__card journey-card">
+                            <div class="journey-card__img _ibg">
+                                <img src="@img/journey-card/img-1.png" alt="">
+                            </div>
+
+                            <div class="journey-card__content content-journey-card">
+                                <div class="content-journey-card__header">
+                                    <span class="content-journey-card__title">Hiking in the Romanian Carpathians | Rodnyansky Alps</span>
+                                    <span class="content-journey-card__date"><i class="icon-calendar"></i> 06.08.2022 - 12.08.2022</span>
+                                </div>
+
+                                <div class="content-journey-card__meta">
+                                    <div class="content-journey-card__meta-item meta-journey-card">
+                                        <span class="meta-journey-card__key">Duration:</span>
+                                        <span class="meta-journey-card__value">6 Day</span>
+                                    </div>
+
+                                    <div class="content-journey-card__meta-item meta-journey-card">
+                                        <span class="meta-journey-card__key">The length of the hike:</span>
+                                        <span class="meta-journey-card__value">65 km</span>
+                                    </div>
+
+                                    <div class="content-journey-card__meta-item meta-journey-card">
+                                        <span class="meta-journey-card__key">Complexity:</span>
+                                        <span class="meta-journey-card__value meta-journey-card__value--complexity">1 2 <em>3</em> 4 5</span>
+                                    </div>
+                                </div>
+
+                                <div class="content-journey-card__footer">
+                                    <a href="#" class="content-journey-card__btn">More detailed</a>
+                                    <span class="content-journey-card__price">7.000 UAH</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journeus__card journey-card">
+                            <div class="journey-card__img _ibg">
+                                <img src="@img/journey-card/img-1.png" alt="">
+                            </div>
+
+                            <div class="journey-card__content content-journey-card">
+                                <div class="content-journey-card__header">
+                                    <span class="content-journey-card__title">Hiking in the Romanian Carpathians | Rodnyansky Alps</span>
+                                    <span class="content-journey-card__date"><i class="icon-calendar"></i> 06.08.2022 - 12.08.2022</span>
+                                </div>
+
+                                <div class="content-journey-card__meta">
+                                    <div class="content-journey-card__meta-item meta-journey-card">
+                                        <span class="meta-journey-card__key">Duration:</span>
+                                        <span class="meta-journey-card__value">6 Day</span>
+                                    </div>
+
+                                    <div class="content-journey-card__meta-item meta-journey-card">
+                                        <span class="meta-journey-card__key">The length of the hike:</span>
+                                        <span class="meta-journey-card__value">65 km</span>
+                                    </div>
+
+                                    <div class="content-journey-card__meta-item meta-journey-card">
+                                        <span class="meta-journey-card__key">Complexity:</span>
+                                        <span class="meta-journey-card__value meta-journey-card__value--complexity">1 2 <em>3</em> 4 5</span>
+                                    </div>
+                                </div>
+
+                                <div class="content-journey-card__footer">
+                                    <a href="#" class="content-journey-card__btn">More detailed</a>
+                                    <span class="content-journey-card__price">7.000 UAH</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journeus__card journey-card">
+                            <div class="journey-card__img _ibg">
+                                <img src="@img/journey-card/img-1.png" alt="">
+                            </div>
+
+                            <div class="journey-card__content content-journey-card">
+                                <div class="content-journey-card__header">
+                                    <span class="content-journey-card__title">Hiking in the Romanian Carpathians | Rodnyansky Alps</span>
+                                    <span class="content-journey-card__date"><i class="icon-calendar"></i> 06.08.2022 - 12.08.2022</span>
+                                </div>
+
+                                <div class="content-journey-card__meta">
+                                    <div class="content-journey-card__meta-item meta-journey-card">
+                                        <span class="meta-journey-card__key">Duration:</span>
+                                        <span class="meta-journey-card__value">6 Day</span>
+                                    </div>
+
+                                    <div class="content-journey-card__meta-item meta-journey-card">
+                                        <span class="meta-journey-card__key">The length of the hike:</span>
+                                        <span class="meta-journey-card__value">65 km</span>
+                                    </div>
+
+                                    <div class="content-journey-card__meta-item meta-journey-card">
+                                        <span class="meta-journey-card__key">Complexity:</span>
+                                        <span class="meta-journey-card__value meta-journey-card__value--complexity">1 2 <em>3</em> 4 5</span>
+                                    </div>
+                                </div>
+
+                                <div class="content-journey-card__footer">
+                                    <a href="#" class="content-journey-card__btn">More detailed</a>
+                                    <span class="content-journey-card__price">7.000 UAH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="journeus__sidebar sidebar" data-spoilers="768,max">
+                        <div class="sidebar__content">
+                            <h3 class="sidebar__title" data-spoiler>Hiking categories <i class="plus"></i></h3>
+
+                            <div class="sidebar__list">
+                                <a href="#" class="sidebar__item">
+                                    <i class="icon-tree"></i>
+                                     New Year's hikes
+                                </a>
+
+                                <span class="sidebar__item">
+                                    <i class="icon-hinking"></i> 
+                                    Hiking
+                                </span>
+
+                                <a href="#" class="sidebar__item">
+                                    <i class="icon-family"></i> 
+                                    Family
+                                </a>
+
+                                <a href="#" class="sidebar__item">
+                                    <i class="icon-man-on-mountain"></i> 
+                                    Ascents
+                                </a>
+
+                                <a href="#" class="sidebar__item">
+                                    <i class="icon-backpack"></i> 
+                                    Hiking without backpacks
+                                </a>
+
+                                <a href="#" class="sidebar__item">
+                                    <i class="icon-man-question"></i> 
+                                    Hiking for beginners
+                                </a>
+
+                                <a href="#" class="sidebar__item">
+                                    <i class="icon-car"></i> 
+                                    Expeditions
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+                <a href="#" class="journeus__more-link">More routes <i class="icon-triangle"></i></a>
+            </div>
+        </section>
+
+        <section class="regions section">
+            <div class="regions__container _container">
+                <h2 class="regions__title block-title">Regions</h2>
+                <div class="regions__grid">
+                    <div class="region-item">
+                        <div class="region-item__wrapper">
+                            <span class="region-item__title">Russia</span>
+
+                            <div class="region-item__grid">
+                                <div class="region-item__column">
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                </div>
+
+                                <div class="region-item__column">
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="region-item">
+                        <div class="region-item__wrapper">
+                            <span class="region-item__title">Russia</span>
+
+                            <div class="region-item__grid">
+                                <div class="region-item__column">
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                </div>
+
+                                <div class="region-item__column">
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="region-item">
+                        <div class="region-item__wrapper">
+                            <span class="region-item__title">Russia</span>
+
+                            <div class="region-item__grid">
+                                <div class="region-item__column">
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                </div>
+
+                                <div class="region-item__column">
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="region-item">
+                        <div class="region-item__wrapper">
+                            <span class="region-item__title">Russia</span>
+
+                            <div class="region-item__grid">
+                                <div class="region-item__column">
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                </div>
+
+                                <div class="region-item__column">
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="region-item">
+                        <div class="region-item__wrapper">
+                            <span class="region-item__title">Russia</span>
+
+                            <div class="region-item__grid">
+                                <div class="region-item__column">
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                </div>
+
+                                <div class="region-item__column">
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                    <span class="region-item__item"><a href="#">Karelia</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us section">
+            <div class="about-us__container _container">
+                <h2 class="block-title">About Us</h2>
+
+                <div class="about-us__content">
+                    <div class="about-us__text-block text-block">
+                        <div class="text-block__wrapper">
+                            <span class="text-block__title">Company Vavilon</span>
+
+                            <p class="text-block__text">
+                                Provides services of various types of outdoor activities: rafting on mountain rivers, rock climbing. Overcoming routes that take place in mountainous terrain at an altitude of more than 3000m above sea level.Short-term or long-term departure (travel) to an area or country other than the territory of permanent residence for a period of more than a day (up to two to three months)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-us__img _ibg">
+                        <img src="@img/about-us/img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('html/_footer.html')
+
+</body>
+</html>

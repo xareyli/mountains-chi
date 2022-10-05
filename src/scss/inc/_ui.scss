@@ -1,0 +1,113 @@
+.btn {
+    @include adaptive-value('padding-bottom', 21, 15, 1);
+    @include adaptive-value('padding-right', 64, 40, 1);
+    @include adaptive-value('padding-left', 64, 40, 1);
+    @include adaptive-value('padding-top', 21, 15, 1);
+
+    @include adaptive-value('font-size', 18, 16, 1);
+
+    transition: color, background-color .3s ease;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-radius: 15px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+}
+
+.burger-btn {
+    @media (min-width: #{$md2 + px}) {
+        display: none;
+    }
+
+    position: relative;
+    cursor: pointer;
+    height: 20px;
+    width: 28px;
+
+    &::before,
+    span,
+    &::after {
+        background-color: $secondary-color;
+        transition: width .2s ease-in;
+        position: absolute;
+        display: block;
+        height: 2px;
+        right: 0;
+    }
+
+    &::before {
+        content: "";
+        width: 28px;
+        top: 1px;
+    }
+
+    span {
+        width: 18px;
+        top: 10px;
+    }
+
+    &::after {
+        width: 23px;
+        content: "";
+        bottom: 0;
+    }
+
+    &:hover {
+        &::before,
+        span,
+        &::after {
+            width: 28px !important;
+        }
+    }
+}
+
+.block-title {
+    @include adaptive-value('font-size', 45, 20, 1);
+    font-weight: bold;
+    color: #000;
+}
+
+.plus {
+    $height: 2px;
+    $width: 20px;
+
+    --color: #000;
+
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+
+    &::before {
+        transform: rotate(0deg) translate(-50%, -50%);
+        transition: transform .3s ease;
+        background-color: var(--color);
+        transform-origin: 0% 0%;
+        display: inline-block;
+        position: absolute;
+        height: $width;
+        width: $height;
+        content: "";
+        left: 50%;
+        top: 50%;
+    }
+
+    &::after {
+        transform: rotate(90deg) translate(-50%, -50%);
+        transition: transform .3s ease;
+        background-color: var(--color);
+        transform-origin: 0% 0%;
+        display: inline-block;
+        position: absolute;
+        height: $width;
+        width: $height;
+        content: "";
+        left: 50%;
+        top: 50%;
+    }
+}

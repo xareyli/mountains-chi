@@ -1,0 +1,123 @@
+// <fonts>======================================================================================================
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+// </fonts>=====================================================================================================
+
+// <vars>=======================================================================================================
+$primary-font: 'Inter', sans-serif; // your value
+
+$primary-color: #FFF; // your value
+$secondary-color: #4274E8; // your value
+
+$min-width: 320; // your value
+$max-width: 1500; // your value
+$max-width-container: 1360; // your value
+
+$md1: $max-width-container + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+// </vars>======================================================================================================
+
+// <wrapper>====================================================================================================
+._wrapper {
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    width: 100%;
+}
+// </wrapper>===================================================================================================
+
+// <container>==================================================================================================
+._container {
+    max-width: $max-width-container + px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+// </container>=================================================================================================
+
+// <imports>====================================================================================================
+@import "_reset.scss";
+@import "_mixins.scss";
+@import "_icons.scss";
+@import "_ui.scss";
+@import "_header.scss";
+@import "_footer.scss";
+@import "_slideout.scss";
+@import "_slide-menu.scss";
+// </imports>===================================================================================================
+
+
+body {
+    font-family: $primary-font;
+    color: $primary-color;
+}
+
+.page-blackout {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+// <technical-classes>
+._highlighted {
+    color: $secondary-color;
+}
+
+._preload * {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+.fullscreen {
+    min-height: 100vh;
+    display: flex;
+
+    &__body {
+        max-width: 100%;
+        flex: 1 1 auto;
+        width: 100%;
+    }
+}
+
+// show image as background for adaptivity
+._ibg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    img {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+._blackout {
+    transition: opacity .3s ease;
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    opacity: 0;
+    left: 0;
+    top: 0;
+
+    &--visible {
+        pointer-events: all;
+        opacity: 1;
+    }
+}
+// </technical-classes>
+
+.section {
+    @include adaptive-value('padding-top', 100, 40, 1);
+}

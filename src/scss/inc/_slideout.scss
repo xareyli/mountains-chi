@@ -1,0 +1,63 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.slideout-menu {
+    transition: transform .3s ease-in-out;
+    background-color: $secondary-color;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 100;
+
+    &__close-btn {
+        transition: transform .3s ease-in-out;
+        position: absolute;
+        cursor: pointer;
+        z-index: 5;
+        top: 26px;
+
+        &::after {
+            background: url("@img/slideout-menu/cross.svg") center center no-repeat;
+            background-size: cover;
+            display: block;
+            height: 35px;
+            width: 35px;
+            content: "";
+        }
+
+        &:hover {
+            transform: rotate(90deg) scale(.9);
+        }
+    }
+}
+
+.slideout-menu-left {
+    transform: translateX(-320px);
+    left: 0;
+}
+
+.slideout-menu-right {
+    transform: translateX(320px);
+    right: 0;
+}
+
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+    transform: none !important;
+    background-color: #FFF; /* A background-color is required */
+    min-height: 100vh;
+}
+
+.slideout-open.slideout-menu {
+    transform: translateX(0px);
+}
+
+.slideout-open body {
+    overflow-y: hidden;
+}
