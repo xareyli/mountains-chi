@@ -25,15 +25,6 @@ export const scss = () =>
         .pipe(
             app.plugins.if(
                 app.isBuild,
-                webpcss({
-                    webpClass: '.webp',
-                    noWebpClass: '.no-webp'
-                })
-            )
-        )
-        .pipe(
-            app.plugins.if(
-                app.isBuild,
                 autoprefixer({
                     grid: true,
                     overrideBrowserlist: ["last 3 versions"],
